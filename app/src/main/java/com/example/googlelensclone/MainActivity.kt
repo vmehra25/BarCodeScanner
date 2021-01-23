@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import com.example.googlelensclone.barcode.BarCodeActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
             }catch (e: Exception){
                 Log.d("ERR_MSG", "Error $e")
             }
+        }
+
+        btnScanBarCode.setOnClickListener {
+            val intent = Intent(this, BarCodeActivity::class.java)
+            startActivity(intent)
         }
     }
 
