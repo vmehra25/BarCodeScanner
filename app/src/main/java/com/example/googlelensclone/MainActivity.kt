@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import com.example.googlelensclone.barcode.BarCodeActivity
+import com.example.googlelensclone.facedetect.FaceDetectActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
 
         btnScanBarCode.setOnClickListener {
             val intent = Intent(this, BarCodeActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnFaceDetect.setOnClickListener {
+            val intent = Intent(this, FaceDetectActivity::class.java)
             startActivity(intent)
         }
     }

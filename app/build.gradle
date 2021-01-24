@@ -60,4 +60,5 @@ dependencies {
     // If you want to additionally use the CameraX Extensions library
     implementation "androidx.camera:camera-extensions:1.0.0-alpha20"
     implementation 'com.google.mlkit:barcode-scanning:16.1.0'
+    implementation 'com.google.mlkit:face-detection:16.0.3'
 }

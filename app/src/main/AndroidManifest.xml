@@ -7,7 +7,7 @@
         android:required="true" />
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <queries>
         <intent>
@@ -22,7 +22,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleLensClone">
-        <activity android:name=".CameraActivity"></activity>
+        <activity android:name=".facedetect.FaceDetectActivity"></activity>
+        <activity android:name=".CameraActivity" />
         <activity android:name=".barcode.BarCodeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
