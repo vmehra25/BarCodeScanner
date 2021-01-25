@@ -9,6 +9,7 @@ import android.util.Log
 import com.example.googlelensclone.barcode.BarCodeActivity
 import com.example.googlelensclone.facedetect.FaceDetectActivity
 import com.example.googlelensclone.imagelabel.ImageLabelingActivity
+import com.example.googlelensclone.textrecognition.TextRecognitionActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -43,6 +44,11 @@ class MainActivity : AppCompatActivity() {
 
         btnLabelDetect.setOnClickListener {
             val intent = Intent(this, ImageLabelingActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnTextRecognition.setOnClickListener {
+            val intent = Intent(this, TextRecognitionActivity::class.java)
             startActivity(intent)
         }
     }
